@@ -6,7 +6,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --upgrade pip && \
-    pip3 install numpy spark-nlp==6.0.0 pyspark==3.0.0
+    pip3 install numpy spark-nlp==6.0.4 pyspark==3.5.6
 
 COPY test_sparknlp.py /app/test_sparknlp.py
 COPY run_tests.sh /app/run_tests.sh
